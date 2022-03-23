@@ -20,24 +20,15 @@ Welcome to SAP-LigaAC Lab1
 
 
 ### 1. Set Up Development Tools
-- Install GIT
-  https://developers.sap.com/tutorials/btp-app-set-up-local-development.html#e131f039-c4d4-4e29-8d64-c774b0dff9c1
-- Install Node
-  https://developers.sap.com/tutorials/btp-app-set-up-local-development.html#85c712a0-821e-48ba-992c-ba727985c314
-- Install VS code
-  https://developers.sap.com/tutorials/btp-app-set-up-local-development.html#8ccbe83d-2182-45b7-a891-178f46e1a117
-- Install VS extensions
-  https://developers.sap.com/tutorials/btp-app-set-up-local-development.html#cc41d842-5014-4e9e-a16b-8897a1f11ffc
-- Install CF CLI
-  https://developers.sap.com/tutorials/btp-app-set-up-local-development.html#2e0990e0-9c79-491c-9bc0-e6ead997225a
-- Install CAP CDS tooling
-  https://developers.sap.com/tutorials/btp-app-set-up-local-development.html#7ff02f69-2fe9-4061-b19c-39f8ee9ae08d
-- Install SAP UI5 CLI
-  https://developers.sap.com/tutorials/btp-app-set-up-local-development.html#a8c2a0e3-9fa7-4314-aebe-bf3c153a2835
-- Install MTA build tool (steps 1-3)
-  https://developers.sap.com/tutorials/btp-app-cap-mta-deployment.html#88db1575-a9d1-4d5b-8379-a45e4ab8adbc
-- Install POSTMAN
-  https://developers.sap.com/tutorials/api-tools-postman-install.html
+- [Install GIT](https://developers.sap.com/tutorials/btp-app-set-up-local-development.html#e131f039-c4d4-4e29-8d64-c774b0dff9c1 "GitHub")
+- [Install Node](https://developers.sap.com/tutorials/btp-app-set-up-local-development.html#85c712a0-821e-48ba-992c-ba727985c314 "Install Node")
+- [Install VS code](https://developers.sap.com/tutorials/btp-app-set-up-local-development.html#8ccbe83d-2182-45b7-a891-178f46e1a117 "Install VS code")
+- [Install VS extensions](https://developers.sap.com/tutorials/btp-app-set-up-local-development.html#cc41d842-5014-4e9e-a16b-8897a1f11ffc "Install VS extensions")
+- [Install CF CLI](https://developers.sap.com/tutorials/btp-app-set-up-local-development.html#2e0990e0-9c79-491c-9bc0-e6ead997225a "Install CF CLI")
+- [Install CAP CDS tooling](https://developers.sap.com/tutorials/btp-app-set-up-local-development.html#7ff02f69-2fe9-4061-b19c-39f8ee9ae08d "Install CAP CDS tooling")
+- [Install SAP UI5 CLI](https://developers.sap.com/tutorials/btp-app-set-up-local-development.html#a8c2a0e3-9fa7-4314-aebe-bf3c153a2835 "Install SAP UI5 CLI")
+- [Install MTA build tool](https://developers.sap.com/tutorials/btp-app-cap-mta-deployment.html#88db1575-a9d1-4d5b-8379-a45e4ab8adbc "Install MTA build tool") (steps 1-3)
+- [Install POSTMAN](https://developers.sap.com/tutorials/api-tools-postman-install.html "Install POSTMAN")
 
 
 ### 2. Introduction to RESTfull APIs with Node.js and Express
@@ -86,7 +77,8 @@ https://github.com/SAP-LigaAC/lab1.git
 
 ```
 
-### Usefull documentation
+### Useful documentation
+
 https://nodejs.org/api/modules.html#modules_modules
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Status

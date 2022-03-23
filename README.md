@@ -59,9 +59,8 @@ A synchronous API is one in which each operation must complete before the next o
 An asynchronous API is one in which the API will start an operation and immediately return (before the operation is complete). Once the operation finishes, the API will use some mechanism to perform additional operations.
 - Use of callbacks to implement asynchronous functions.
   - call the asynchronous function, passing in your callback function. The function returns immediately and calls your callback when the operation is finished.
--Use a promise-based API
+- Use a promise-based API
   - the asynchronous function starts the operation and returns a Promise object. You can then attach handlers to this promise object, and these handlers will be executed when the operation has succeeded or failed.
-The foundation of asynchronous programming in JavaScript is the Promise.
   - async/await keywords
 
 ### Clone Lab1 GitHub repository

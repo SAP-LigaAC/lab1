@@ -33,37 +33,7 @@ Welcome to SAP-LigaAC Lab1
 
 ### 2. Introduction to RESTfull APIs with Node.js and Express
 
-
-<img width="451" alt="image" src="https://user-images.githubusercontent.com/102019852/159589992-caa86ce2-9791-4141-952f-33fc370799bd.png">
-
-
-#### Node.js
-Node (or more formally Node.js) is an open-source, cross-platform runtime environment that allows developers to create all kinds of server-side tools and applications in JavaScript.
-Node ofers a great performance, being designed to optimize throughput and scalability in web applications and is a good solution for many common web-development problems (e.g. real-time web applications).
-It has a very active third party ecosystem and developer community and the node package manager (NPM) provides access to hundreds of thousands of reusable packages.
-Node is a single-threaded event-driven execution environment. "Single threaded" means that all requests to the server are run on the same thread (rather than being spawned off into separate processes). This model is extremely efficient in terms of speed and server resources, but it does mean that if any of your functions call synchronous methods that take a long time to complete, they will block not just the current request, but every other request being handled by your web application.
-#### Express
-Express is the most popular Node web framework, and is the underlying library for a number of other popular Node web frameworks.
-Developers have created compatible middleware packages to address almost any web development problem. There are libraries to work with cookies, sessions, user logins, URL parameters, POST data, security headers, and many more.
-Express provides methods to specify what function is called for a particular HTTP verb (GET, POST, SET, etc.) and URL pattern ("Route").
-
-#### Importing and exporting modules
-A module is a JavaScript library/file that you can import into other code using Node's `require` or `import` functions.
-Node.js has two module systems: CommonJS modules and ECMAScript modules.
-
-Express itself is a module, as are the middleware and database libraries that we use in our Express applications.
-
-#### Using asynchronous APIs
-JavaScript code frequently uses asynchronous rather than synchronous APIs for operations that may take some time to complete.
-A synchronous API is one in which each operation must complete before the next operation can start.
-An asynchronous API is one in which the API will start an operation and immediately return (before the operation is complete). Once the operation finishes, the API will use some mechanism to perform additional operations.
-- Use of callbacks to implement asynchronous functions.
-  - call the asynchronous function, passing in your callback function. The function returns immediately and calls your callback when the operation is finished.
-- Use a promise-based API
-  - the asynchronous function starts the operation and returns a Promise object. You can then attach handlers to this promise object, and these handlers will be executed when the operation has succeeded or failed.
-  - async/await keywords
-
-### Clone Lab1 GitHub repository
+#### Clone Lab1 GitHub repository
 
 ```
 git clone git@github.com:SAP-LigaAC/lab1.git
@@ -76,11 +46,51 @@ https://github.com/SAP-LigaAC/lab1.git
 
 ```
 
+LAB1 application is a basic example of an Express JS web server application that provides REST endpoints to the end users.
+
+<img width="451" alt="image" src="https://user-images.githubusercontent.com/102019852/159589992-caa86ce2-9791-4141-952f-33fc370799bd.png">
+
+
+#### Node.js
+Node (or more formally Node.js) is an open-source, cross-platform runtime environment that allows developers to create all kinds of server-side tools and applications in JavaScript.
+Node ofers a great performance, being designed to optimize throughput and scalability in web applications and is a good solution for many common web-development problems (e.g. real-time web applications).
+It has a very active third party ecosystem and developer community and the node package manager (NPM) provides access to hundreds of thousands of reusable packages.
+Node is a single-threaded event-driven execution environment. "Single threaded" means that all requests to the server are run on the same thread (rather than being spawned off into separate processes). This model is extremely efficient in terms of speed and server resources, but it does mean that if any of your functions call synchronous methods that take a long time to complete, they will block not just the current request, but every other request being handled by your web application.
+
+#### Express
+Express is the most popular Node.js web application framework, and is the underlying library for a number  of other popular Node web frameworks.
+Express provides a wide set of features to develop web and mobile applications.
+Developers have created compatible middleware packages to address almost any web development problem. There are libraries to work with cookies, sessions, user logins, URL parameters, POST data, security headers, and many more.
+
+#### NPM (Node Package Manager)
+It provides online repositories for Node.js packages/modules and also a command line utility to install Node.js packages, does version management and dependency management of Node.js packages
+
+#### Importing and exporting modules
+A module is a JavaScript library/file that you can import into other code using Node's `require` or `import` functions.
+Node.js has two module systems: CommonJS modules and ECMAScript modules.
+ECMAScript modules are the official standard format to package JavaScript code for reuse.
+Express itself is a module, as are the middleware and database libraries that we use in our Express applications.
+
+#### Using asynchronous APIs
+JavaScript code frequently uses asynchronous rather than synchronous APIs for operations that may take some time to complete.
+A synchronous API is one in which each operation must complete before the next operation can start.
+An asynchronous API is one in which the API will start an operation and immediately return (before the operation is complete). Once the operation finishes, the API will use some mechanism to perform additional operations.
+- Use of callbacks to implement asynchronous functions.
+  - call the asynchronous function, passing in your callback function. The function returns immediately and calls your callback when the operation is finished.
+- Use a promise-based API
+  - the asynchronous function starts the operation and returns a Promise object. You can then attach handlers to this promise object, and these handlers will be executed when the operation has succeeded or failed.
+  - async/await reduce the boilerplate around promises, code look like it's synchronous, but it's asynchronous and non-blocking behind the scenes.
+
+
+
+
 ### Useful documentation
 
+https://nodejs.org/api/documentation.html
+https://nodejs.dev/learn/modern-asynchronous-javascript-with-async-and-await
 https://nodejs.org/api/modules.html#modules_modules
 https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
-https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing
-https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Promises
-https://www.coreycleary.me/project-structure-for-an-express-rest-api-when-there-is-no-standard-way

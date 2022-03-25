@@ -25,7 +25,7 @@ Welcome to SAP-LigaAC Lab1
 - [Install POSTMAN](https://developers.sap.com/tutorials/api-tools-postman-install.html "Install POSTMAN")
 
 
-### 2. Introduction to RESTfull APIs with Node.js and Express
+### 2. Introduction to RESTful APIs with Node.js and Express
 
 #### Clone Lab1 GitHub repository
 
@@ -33,16 +33,13 @@ Welcome to SAP-LigaAC Lab1
 git clone git@github.com:SAP-LigaAC/lab1.git
 ```
 or
-
 ```
-https://github.com/SAP-LigaAC/lab1.git
+git clone https://github.com/SAP-LigaAC/lab1.git
 ```
 
-LAB1 application is a basic example of an Express JS web server application that provides REST APIs to the end users.
-
-
-<img width="451" alt="image" src="https://user-images.githubusercontent.com/102019852/159589992-caa86ce2-9791-4141-952f-33fc370799bd.png">
-
+If the `git clone` command fails, then you will have to:
+  - manually download the zip file from repository home page
+  - decompress the zip File
 
 #### Node.js
 Node (or more formally Node.js) is an open-source, cross-platform runtime environment that allows developers to create all kinds of server-side tools and applications in JavaScript.
@@ -74,9 +71,13 @@ An asynchronous API is one in which the API will start an operation and immediat
   - the asynchronous function starts the operation and returns a Promise object. You can then attach handlers to this promise object, and these handlers will be executed when the operation has succeeded or failed.
   - async/await reduce the boilerplate around promises, code look like it's synchronous, but it's asynchronous and non-blocking behind the scenes.
 
-
 ### 3. App usage
 
+LAB1 application is a basic example of an Express JS web server application that provides REST APIs to the end users.
+
+<img width="451" alt="image" src="https://user-images.githubusercontent.com/102019852/159589992-caa86ce2-9791-4141-952f-33fc370799bd.png">
+
+For simplicity the persistence layer of the first app is replaced here by a simple Array.
 #### Start the application locally by executing:
 
 ```

@@ -8,15 +8,9 @@ Welcome to SAP-LigaAC Lab1
 
 ### Hands on
 - Setup the local environment by installing the tools required for our LABs
-- Clone Lab1 github repository
 - Start the provided app locally
 - Use POSTMAN to test the app provided REST APIs
-- Enhance the provided app with at least one of the below:
-  - Create a new endpoint (i.e. for getting all the bookings)
-  - Update an existing endpoint (i.e. for adding a new booking)
-    - Validate that a booking for the same ID does not already exist and in case that already exists send an explicit error message with status code Conflict (HTTP 409)
-    - Validate the received request parameters
-        - validate that the email or the phone number have the right format
+- Enhance the provided app by adding new functionalities
 
 
 ### 1. Set Up Development Tools
@@ -37,16 +31,15 @@ Welcome to SAP-LigaAC Lab1
 
 ```
 git clone git@github.com:SAP-LigaAC/lab1.git
-
 ```
 or
 
 ```
 https://github.com/SAP-LigaAC/lab1.git
-
 ```
 
-LAB1 application is a basic example of an Express JS web server application that provides REST endpoints to the end users.
+LAB1 application is a basic example of an Express JS web server application that provides REST APIs to the end users.
+
 
 <img width="451" alt="image" src="https://user-images.githubusercontent.com/102019852/159589992-caa86ce2-9791-4141-952f-33fc370799bd.png">
 
@@ -82,15 +75,56 @@ An asynchronous API is one in which the API will start an operation and immediat
   - async/await reduce the boilerplate around promises, code look like it's synchronous, but it's asynchronous and non-blocking behind the scenes.
 
 
+### 3. App usage
+
+#### Start the application locally by executing:
+
+```
+npm install
+npm start
+
+```
+#### Test the app
+
+Use POSTMAN to import the lab's POSTMAN collection and environmnet variables.
+
+#### Exercises
+
+- Create a new endpoint
+  - for getting all the bookings
+- Update an existing endpoint
+  - When adding a new booking
+    - Validate that a booking for the same ID does not already exist and if exists send an explicit error with status code HTTP 409 Conflict
+    - Validate request body fields (i.e. validate that email/phone has the right format
 
 
-### Useful documentation
+- Optional:
+  - create a new endoint
+    - for deleting a booking with a certain ID
+    - for deleting all the bookings
+  - update an existing enpoint
+    - validate that a booking for the same person (email/phone) does not already exist
 
-https://nodejs.org/api/documentation.html
-https://nodejs.dev/learn/modern-asynchronous-javascript-with-async-and-await
-https://nodejs.org/api/modules.html#modules_modules
-https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+#### Npm dependecies used by the app
+
+- https://www.npmjs.com/package/express
+- https://www.npmjs.com/package/express-validator
+- https://www.npmjs.com/package/body-parser
+- https://www.npmjs.com/package/http-status-codes
+
+
+
+### Documentation
+
+- https://nodejs.org/api/documentation.html
+- https://nodejs.dev/learn/modern-asynchronous-javascript-with-async-and-await
+- https://nodejs.org/api/modules.html#modules_modules
+- https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+- https://learning.postman.com/docs/getting-started/importing-and-exporting-data/
+- https://learning.postman.com/docs/sending-requests/managing-environments/
+

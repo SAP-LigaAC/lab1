@@ -50,7 +50,7 @@ Node ofers a great performance, being designed to optimize throughput and scalab
 It has a very active third party ecosystem and developer community and the node package manager (NPM) provides access to hundreds of thousands of reusable packages.
 Node is a single-threaded event-driven execution environment. "Single threaded" means that all requests to the server are run on the same thread (rather than being spawned off into separate processes). This model is extremely efficient in terms of speed and server resources, but it does mean that if any of your functions call synchronous methods that take a long time to complete, they will block not just the current request, but every other request being handled by your web application.
 
-#### Express
+#### Express JS
 Express is the most popular Node.js web application framework, and is the underlying library for a number  of other popular Node web frameworks.
 Express provides a wide set of features to develop web and mobile applications.
 Developers have created compatible middleware packages to address almost any web development problem. There are libraries to work with cookies, sessions, user logins, URL parameters, POST data, security headers, and many more.
@@ -102,7 +102,7 @@ Use POSTMAN to import the lab's POSTMAN collection and environmnet variables.
   - create a new endoint
     - for deleting a booking with a certain ID
     - for deleting all the bookings
-  - update an existing enpoint
+  - update an existing endpoint
     - validate that a booking for the same person (email/phone) does not already exist
 
 

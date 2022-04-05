@@ -128,4 +128,5 @@ Use POSTMAN to import the lab's POSTMAN collection and environmnet variables.
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 - https://learning.postman.com/docs/getting-started/importing-and-exporting-data/
 - https://learning.postman.com/docs/sending-requests/managing-environments/
+- https://nodejs.dev/learn/how-much-javascript-do-you-need-to-know-to-use-nodejs
 

@@ -2,7 +2,7 @@ const fs = require('fs')
 
 console.log("program flow starts");
 
-fs.readFile('files.json', (err, data) => {
+fs.readFile('file.json', (err, data) => {
   if (err) {
     //handle error
     console.log('an error was received reading file',err.message);

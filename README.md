@@ -118,13 +118,11 @@ Use POSTMAN to import the lab's POSTMAN collection and environmnet variables.
 
 ### Documentation
 
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 - https://nodejs.org/api/documentation.html
 - https://nodejs.dev/learn/modern-asynchronous-javascript-with-async-and-await
 - https://nodejs.org/api/modules.html#modules_modules
 - https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 - https://learning.postman.com/docs/getting-started/importing-and-exporting-data/
 - https://learning.postman.com/docs/sending-requests/managing-environments/

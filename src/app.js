@@ -16,9 +16,14 @@ export const initializeApp = () => {
 
     app.use(bodyParser.json());
 
-    app.get('/', (req, res) => res.send('App is working'));
-    app.get('/bookings', (req, res) => res.send(bookings));
+    app.get('/', (req, res) => res.send(req.headers)
+
+    );
+
     app.post('/bookings', (req, res) => addBooking(req, res));
+
+
+    app.get('/bookings/:id', (req, res) => res.send(bookings));
 
 
     // app.use((req, res) => {
@@ -36,7 +41,15 @@ export const initializeApp = () => {
 }
 
 function addBooking(req, res) {
+
     const booking = req.body;
-    bookings.push(booking);
-    res.send(booking);
+    const id = req.body.id;
+
+    if (id) {
+        bookings.push(booking);
+        res.send(booking);
+    } else {
+        res.sendStatus(404);
+    }
+
 }
